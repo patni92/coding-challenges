@@ -3,7 +3,12 @@ function palindrome(string) {
   for(var i = string.length; i >= 0; i -= 1) {
     stringReverse += string.charAt(i);
   }
-  return stringReverse === string;
-}
+  if(stringReverse === string) {
+    console.log(string + " is palindrome");
+  } else {
+    console.log(string + " is not palindrome");
+  }
+};
 
-console.log(palindrome("annaz"));
+palindrome("anna");
+palindrome("hello");
